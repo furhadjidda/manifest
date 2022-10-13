@@ -4,8 +4,15 @@
   <default remote="aosp" revision="master" sync-j="4"/>
   <manifest-server url="http://android-smartsync.corp.google.com/android.googlesource.com/manifestserver"/>
 
-  <project remote="aosp" name="device/amlogic/yukawa" revision="8318151d18f79840ff2ac7b94595dbfd2bed8b10"  groups="device,yukawa,pdk"/>
-  <project remote="aosp" name="device/amlogic/yukawa-kernel" revision="b2d10cb608d9eb251b5605498672940ca2059f4c"  groups="device,yukawa,pdk" clone-depth="2"/>
+  <remote fetch="https://github.com/furhadjidda/"
+    review="https://github.com/furhadjidda/"
+    name="aosp_auto"
+    sync-j="12"/>
+  
+  <project remote="aosp_auto" name="device_amlogic_yukawa" path="device/amlogic/yukawa" dest-branch="development/prometheusV1" revision="development/prometheusV1"   groups="device,yukawa,pdk"/>
+  <project remote="aosp_auto" name="device_amlogic_yukawa_kernel" path="device/amlogic/yukawa-kernel" dest-branch="development/prometheusV1" revision="development/prometheusV1"   groups="device,yukawa,pdk" clone-depth="2"/>
+
+
   <project remote="aosp" name="device/common" revision="a3a6ba684e0b01a550197a210004999f396a2d56"  groups="pdk-cw-fs,pdk"/>
   <project remote="aosp" name="device/generic/arm64" revision="d58646ef5c2d669fa36e36cc81c5b18510a57564"  groups="pdk"/>
   <project remote="aosp" name="device/generic/armv7-a-neon" revision="7981a8e49e9ae9717bf8bcaeae6717dfe4b9f33a"  groups="pdk"/>
