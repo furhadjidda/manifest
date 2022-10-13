@@ -11,7 +11,7 @@
   
   <project remote="aosp_auto" name="device_amlogic_yukawa" path="device/amlogic/yukawa" dest-branch="development/prometheusV1" revision="development/prometheusV1"   groups="device,yukawa,pdk"/>
   <project remote="aosp_auto" name="device_amlogic_yukawa_kernel" path="device/amlogic/yukawa-kernel" dest-branch="development/prometheusV1" revision="development/prometheusV1"   groups="device,yukawa,pdk" clone-depth="2"/>
-
+  <project remote="aosp_auto" name="libgpiod" path="vendor/external/libgpiod" dest-branch="development/v1.6.x" revision="development/v1.6.x"/>
 
   <project remote="aosp" name="device/common" revision="a3a6ba684e0b01a550197a210004999f396a2d56"  groups="pdk-cw-fs,pdk"/>
   <project remote="aosp" name="device/generic/arm64" revision="d58646ef5c2d669fa36e36cc81c5b18510a57564"  groups="pdk"/>
